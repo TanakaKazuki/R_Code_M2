@@ -37,6 +37,10 @@ def main(list_sitename,yogo_filename,ver,list_text_filename):
       text_yogo_list = []
       for setu in range(len(df_text['term'])):
         setu_term = df_text['term'][setu].split('/')
+        # if '' in setu_term:
+        #   print('================')
+        #   print(df_text['term'][setu])
+        #   print('================')
         text_yogo_list.append(setu_term)
       text_yogo_list = list(itertools.chain.from_iterable(text_yogo_list))
       text_yogo_list = list(set(text_yogo_list))
@@ -80,7 +84,7 @@ def main(list_sitename,yogo_filename,ver,list_text_filename):
         for k in range(len(id_list)):
           id = id_list[k]
           dir = '/Users/kazuki/Desktop/research/data_Research_M2/R_Data_M2/senkei/For_all_removed/head_data/'
-          df_head_data = pd.read_csv(dir+site_name+'_'+ver+'/removed_head_'+id+'.csv')
+          df_head_data = pd.read_csv(dir+site_name+'_'+'0621'+'/removed_head_'+id+'.csv')
           
           column_id.append(id)
           URL_index = df_html_data[df_html_data[0]==id][1]
@@ -237,9 +241,10 @@ if __name__ == "__main__":
     yogo_filename = 'senkei_1500_tanaka'
     
     
-    ver = '0621'
+    ver = '0819'
     
-    text_filename = ['senkeidaisugaku_'+ver+'.csv']
+    #text_filename = ['senkeidaisugaku_'+ver+'.csv']
+    text_filename = ['senkeidaisuyoron_'+ver+'.csv']
 
     main(list_sitename,yogo_filename,ver,text_filename)
 

@@ -103,7 +103,7 @@ def main(list_sitename,input_name,ver,limit):
       #各節
       for k in range(len(setu_name)):
         
-        ver2 = '0715'
+        ver2 = '0819'
         
         dir = '/Users/kazuki/Desktop/research/data_Research_M2/R_Data_M2/hand_match'
         df_match = pd.read_csv(dir+'/senkei/'+ver2+'/'+'handmatch_'+input_name[i]+'_'+site_name+'.csv')
@@ -150,9 +150,10 @@ if __name__ == "__main__":
     
     
     
-    input_name = ['senkeidaisugaku']
+    #input_name = ['senkeidaisugaku']
+    input_name = ['senkeidaisuyoron']
     
-    ver = '0621'
-    limit = '1'
+    ver = '0819'
+    limit = '2'
 
     main(list_sitename,input_name,ver,limit)

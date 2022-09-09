@@ -237,9 +237,11 @@ if __name__ == "__main__":
     yogo_filename = 'all_vocab_kaiseki_tanaka'
     
     
-    ver = '0628'
+    ver = '0819'
     
-    text_filename = ['kosen_biseki1_'+ver+'.csv']
+    #text_filename = ['kosen_biseki1_'+ver+'.csv']
+    text_filename = ['bibunsekibungaku_'+ver+'.csv']
+
 
     main(list_sitename,yogo_filename,ver,text_filename)
 

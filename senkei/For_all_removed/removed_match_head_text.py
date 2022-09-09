@@ -147,10 +147,11 @@ if __name__ == "__main__":
 
     delete_term = ['']
     #テキスト内用語とページ見出し内用語の、一致用語数の閾値
-    limit = '1'
+    limit = '2'
     
-    ver = '0621'
+    ver = '0819'
     
-    list_textname = ['senkeidaisugaku']
+    #list_textname = ['senkeidaisugaku']
+    list_textname = ['senkeidaisuyoron']
     
     main(list_sitename,list_textname,limit,delete_term,ver)

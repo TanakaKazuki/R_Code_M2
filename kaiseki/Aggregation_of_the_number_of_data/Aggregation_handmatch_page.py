@@ -49,13 +49,14 @@ if __name__ == "__main__":
                     'hiraocafe.com','hooktail.sub.jp','manabitimes.jp','math-fun.net',
                     'opencourse.doshisha.ac.jp','math-juken.com','ramenhuhu.com',
                     'rikeilabo.com','ufcpp.net','univ-juken.com',
-                    'univ-study.net','w3e.kanazawa-it.ac.jp','www.geisya.or.jp',
+                    'univ-study.net','www.geisya.or.jp',
                     'www.momoyama-usagi.com','yorikuwa.com']
     
     
-    input_name = ['kosen_biseki1']
+    #input_name = ['kosen_biseki1']
+    input_name = ['bibunsekibungaku']
     
-    ver = '0616'
+    ver = '0819'
     limit = '1'
 
     main(list_sitename,input_name,ver,limit)

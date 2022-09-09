@@ -103,7 +103,7 @@ def main(list_sitename,input_name,ver,limit):
       #各節
       for k in range(len(setu_name)):
         
-        ver2 = '0616'
+        ver2 = '0819'
         
         dir = '/Users/kazuki/Desktop/research/data_Research_M2/R_Data_M2/hand_match'
         df_match = pd.read_csv(dir+'/'+ver2+'/'+'handmatch_'+input_name[i]+'_'+site_name+'.csv')
@@ -145,13 +145,14 @@ if __name__ == "__main__":
                     'hiraocafe.com','hooktail.sub.jp','manabitimes.jp','math-fun.net',
                     'opencourse.doshisha.ac.jp','math-juken.com','ramenhuhu.com',
                     'rikeilabo.com','tau.doshisha.ac.jp','ufcpp.net','univ-juken.com',
-                    'univ-study.net','w3e.kanazawa-it.ac.jp','www.geisya.or.jp',
+                    'univ-study.net','www.geisya.or.jp',
                     'www.momoyama-usagi.com','www.sci.hokudai.ac.jp','yorikuwa.com']
     
     
-    input_name = ['kosen_biseki1']
+    #input_name = ['kosen_biseki1']
+    input_name = ['bibunsekibungaku']
     
-    ver = '0628'
-    limit = '1'
+    ver = '0819'
+    limit = '2'
 
     main(list_sitename,input_name,ver,limit)

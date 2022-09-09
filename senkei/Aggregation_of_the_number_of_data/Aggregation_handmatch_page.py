@@ -54,9 +54,10 @@ if __name__ == "__main__":
     
     
     
-    input_name = ['senkeidaisugaku']
+    #input_name = ['senkeidaisugaku']
+    input_name = ['senkeidaisuyoron']
     
-    ver = '0715'
+    ver = '0819'
     limit = '1'
 
     main(list_sitename,input_name,ver,limit)
